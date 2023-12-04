@@ -1,0 +1,17 @@
+{
+  "name": "travelagency",
+  "version": "1.0.0",
+  "description": "Landing Page de una Agencia de viaje usando Tailwind",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "postcss css/tailwind.css -o public/css/style.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.5"
+  }
+}
