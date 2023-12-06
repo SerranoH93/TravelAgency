@@ -10,7 +10,7 @@
     <link rel="icon" type="image/svg+xml" href="./assets/icon/avion.png" />
     <title>Travel Agency</title>
 </head>
-<body>
+<body class="font-Montserrat">
     <nav></nav>
 
     <div id="tab_bar"></div>
@@ -19,8 +19,8 @@
         <div id="home">
             <div class="w-full h-3/4">
                 <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
-                    <input class="outline-none p-3 rounded-full shadow-sm" placeholder="San Francisco" type="search">
-                    <button class="w-32 text-xl text-primary font-semibold p-4 rounded-full bg-white shadow-sm cursor-pointer">Explorar</button>
+                    <input class="outline-none p-3 rounded-full shadow-sm transition-all duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12" placeholder="San Francisco" type="search">
+                    <button class="w-32 text-xl text-primary font-semibold p-4 rounded-full bg-white shadow-sm cursor-pointer transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110">Explorar</button>
                 </div>
                 <div class="w-full h-full">
                     <img src="./assets/img/sanFrancisco.jpg" alt="">
@@ -73,7 +73,62 @@
             </div>
         </div>
 
-        <div id="rentas_destacadas"></div>
+        <div class="px-2 w-full h-auto mb-4" id="rentas_destacadas">
+            <p class="text-3xl text-primary font-semibold pb-6 mt-6">Trending Stays</p>
+            <div class="w-full h-auto pb-3 mb-4 flex flex-col space-y-6 items-center justify-center">
+                <div class="w-full h-96 bg-chicago bg-cover rounded-xl">
+                    <p class="CardTitle">Chicago</p>
+                    <p class="text-sm pl-8 text-white mr-24">2 rooms, bathroom and kitchen.</p>
+                </div>
+
+                <div class="w-full h-96 bg-LA bg-cover rounded-xl">
+                    <p class="CardTitle">Los Angeles</p>
+                    <p class="text-sm pl-8 text-white mr-24">4 rooms, 3 bathrooms,  kitchen and private pool.</p>
+                </div>
+
+                <div class="w-full h-96 bg-miami bg-cover rounded-xl">
+                    <p class="CardTitle">Miami</p>
+                    <p class="text-sm pl-8 text-white mr-24">3 rooms, 2 bathrooms,  kitchen and amazing 
+                        sea view.</p>
+                </div>
+
+                <div class="w-full h-96 bg-bali bg-cover pb-4 rounded-xl">
+                    <p class="CardTitle">Bali</p>
+                    <p class="text-sm pl-8 text-white mr-24">2 rooms, 2 bathrooms,  kitchen and private
+                        pool.</p>
+                </div>                
+            </div>
+        </div>
+
+        <div class="w-full h-full" id="faqs">
+            <div class="w-full h-full px-6 flex flex-col space-y-4">
+                <p class="text-3xl text-primary font-semibold mt-4">FAQS</p>
+                <div>
+                    <p class="text-xl font-medium text-primary">Payment Methods</p>
+                    <p class="text-md pt-2">We accept VISA, MasterCard, American Express, Paypal and Binance</p>
+                </div>
+
+                <div>
+                    <p class="text-xl font-medium text-primary">Cancellation Policy</p>
+                    <p class="text-md pt-2">To receive a full refund, guests must cancel at least 30 days before arrival.</p>
+                </div>
+
+                <div>
+                    <p class="text-xl font-medium text-primary">Long Stays</p>
+                    <p class="text-md pt-2">We have stays of up to 3 months, in this case, an advance payment with an amount of 50% of the rental value</p>
+                </div>
+
+                <div>
+                    <p class="text-xl font-medium text-primary">Pet Policy</p>
+                    <p class="text-md pt-2">In our stays, we are pet friendly, so you can bring to your travel adventure.</p>
+                </div>
+
+                <div>
+                    <p class="text-xl font-medium text-primary">Safety information</p>
+                    <p class="text-md pt-2">All our stays have insurance in case of accidents</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer></footer>
