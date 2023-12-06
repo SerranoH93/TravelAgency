@@ -7,5 +7,5 @@
 }
 
 .CardTitle {
-    @apply text-3xl px-8 pt-8 pb-2 font-semibold text-white
+    @apply text-3xl px-8 pt-8 pb-2 font-semibold text-white lg:text-right
 }
